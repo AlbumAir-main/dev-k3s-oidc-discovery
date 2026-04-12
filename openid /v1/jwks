@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "use": "sig",
+      "kty": "RSA",
+      "kid": "REPLACE_WITH_YOUR_ACTUAL_KID",
+      "alg": "RS256",
+      "n": "REPLACE_WITH_YOUR_ACTUAL_N",
+      "e": "AQAB"
+    }
+  ]
+}
