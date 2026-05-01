@@ -160,9 +160,3 @@ printf '%s\n' "$jwks_json" > "$OUT_FILE"
 
 echo "Updated JWKS: $OUT_FILE"
 echo "kid: $(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["keys"][0]["kid"])' "$OUT_FILE")"
-
-
-az keyvault secret set \
-  --vault-name kv-infra-platform-dev \
-  --name opensearch-filebeat-password \
-  --value 'AlW5Y57C747z0as+aS8HtXAWp4yJfgnbGD389XfEfWA='
